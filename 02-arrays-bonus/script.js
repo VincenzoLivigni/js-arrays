@@ -1,20 +1,36 @@
 const teachers = [
-  'Nathan',
-  'Ed',
-  'Fabio',
-  'Phil',
-  'Carlo',
-  'Lewis',
-  'Luca'
+  'Nathan', // si
+  'Ed', // no
+  'Fabio', // si 
+  'Phil', // no
+  'Carlo', //si
+  'Lewis', //si
+  'Luca' //no
 ]; // NON MODIFICARE QUESTA VARIABILE
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = null;
+const reversedTeachers = [];
+
+for (let i=0; i<teachers.length; i++){
+     reversedTeachers[i] = teachers[teachers.length-i-1];
+    }
+    console.log(reversedTeachers)
+
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
+const longNames = [];
+let j=0
+
+for (let i=0; i<teachers.length; i++) {
+ if (teachers[i].length >= 5) {
+  longNames[j] = teachers[i] 
+  j++
+  }
+}
+console.log(longNames);
+
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
