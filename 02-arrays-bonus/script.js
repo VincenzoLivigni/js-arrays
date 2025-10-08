@@ -1,11 +1,11 @@
 const teachers = [
-  'Nathan',
-  'Ed',
-  'Fabio',
-  'Phil',
-  'Carlo',
-  'Lewis',
-  'Luca'
+  'Nathan', // 6 -
+  'Ed',     // 2
+  'Fabio',  // 5 -
+  'Phil',   // 4
+  'Carlo',  // 5 -
+  'Lewis',  // 5 -
+  'Luca'    // 4
 ]; // NON MODIFICARE QUESTA VARIABILE
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
@@ -13,11 +13,11 @@ const teachers = [
 const reversedTeachers = teachers.reverse();
 console.log(reversedTeachers);
 
-
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
-
+const longNames = teachers.filter(insegnanti => insegnanti.length >= 5) 
+    console.log(longNames);
+    
 // 3. Rimuovi 'Ed' dall'array teachers
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
